@@ -1,0 +1,47 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#modeTitle {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+button {
+    width: calc(50% - 20px);
+    height: 50px;
+    margin: 5px;
+}
+
+.settings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.value {
+    margin: 0 10px;
+}
+
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
