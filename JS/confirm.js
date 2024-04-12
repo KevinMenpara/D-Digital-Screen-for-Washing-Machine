@@ -17,11 +17,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     document.getElementById("next").addEventListener("click", function() {
-        window.location.href = "wait.html";
+        localStorage.setItem("wash", document.getElementById("washValue").textContent);
+        window.location.href = "wash.html";
     });
 
     // Cancel button
     document.getElementById("cancel").addEventListener("click", function() {
-        window.location.href = "index.html";
+        var confirmCancel = confirm("go back to start?");
+        if (confirmCancel) {
+            window.location.href = "index.html";
+        }
     });
 });

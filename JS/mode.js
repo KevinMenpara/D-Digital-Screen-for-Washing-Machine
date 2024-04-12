@@ -41,6 +41,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     document.getElementById("cancel").addEventListener("click", function() {
-        window.location.href = "index.html";
+        var confirmCancel = confirm("go back to start?");
+        if (confirmCancel) {
+            window.location.href = "index.html";
+        }
     });
 });

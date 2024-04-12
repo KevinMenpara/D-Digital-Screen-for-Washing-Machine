@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     document.getElementById("cancel").addEventListener("click", function() {
-        var confirmCancel = confirm("Do you really want to cancel this action?");
+        var confirmCancel = confirm("go back to start?");
         if (confirmCancel) {
             window.location.href = "index.html";
         }
