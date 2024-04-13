@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Set Parameters</title>
-    <link rel="stylesheet" href="../CSS/set.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../CSS/set.css" />
+    <link rel="stylesheet" href="../CSS/global.css" />
+  </head>
+  <body>
     <div>
-        <h1 id="modeTitle">Set Parameters of Mode</h1>
+      <h1 id="modeTitle">Set Parameters of Mode</h1>
     </div>
-    <div class="buttons">
-        <button id="back">Back</button>
-        <button id="next">Next</button>
+    <div class="top-bar">
+      <button id="back">Back</button>
+      <button id="next">Next</button>
     </div>
-    <div class="settings">
-        <h3>Wash Time</h3>
-        <button class="change" id="washPlus">+</button>
-        <div class="value" id="washValue">20</div>
-        <button class="change" id="washMinus">-</button>
-    </div>
-    <div class="settings">
-        <h3>Temperature</h3>
-        <button class="change" id="tempPlus">+</button>
-        <div class="value" id="tempValue">20</div>
-        <button class="change" id="tempMinus">-</button>
-    </div>
-    <div class="settings">
-        <h3>Dry Time</h3>
-        <button class="change" id="dryPlus">+</button>
-        <div class="value" id="dryValue">20</div>
-        <button class="change" id="dryMinus">-</button>
+    <div class="content">
+        <div class="settingTitle">
+            <h3>Wash Time</h3>
+            <h3>Temperature</h3>
+            <h3>Dry Time</h3>
+        </div>
+      <div class="settings">
+        <div class="wash">
+          <button class="change" id="washMinus">-</button>
+          <div class="value" id="washValue">20</div>
+          <button class="change" id="washPlus">+</button>
+        </div>
+        <div class="temp">
+          <button class="change" id="tempMinus">-</button>
+          <div class="value" id="tempValue">20</div>
+          <button class="change" id="tempPlus">+</button>
+        </div>
+        <div class="dry">
+          <button class="change" id="dryMinus">-</button>
+          <div class="value" id="dryValue">20</div>
+          <button class="change" id="dryPlus">+</button>
+        </div>
+      </div>
     </div>
     <div class="bottom-bar">
-        <button id="cancel">Cancel</button>
+      <button id="cancel">Cancel</button>
     </div>
 
     <script src="../JS/set.js"></script>
-</body>
+  </body>
 </html>

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     modeButtons.forEach(button => {
         button.addEventListener("mouseenter", function() {
             if (this !== selectedButton) {
-                this.style.backgroundColor = "lightblue";
+                this.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
             }
         });
 
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (selectedButton) {
                     selectedButton.style.backgroundColor = "";
                 }
-                this.style.backgroundColor = "darkblue";
+                this.style.backgroundColor = "rgb(0, 98, 255, 0.7)";
                 selectedButton = this;
                 document.getElementById("next").disabled = false;
             }
