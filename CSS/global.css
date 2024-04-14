@@ -10,6 +10,11 @@ button {
   outline: none;
   font-family: "Comic Neue", cursive;
   font-weight: 500;
+  cursor: pointer;
+}
+
+button:disabled{
+  cursor: default;
 }
 
 .top-bar {
@@ -38,6 +43,7 @@ button {
   color: white;
   font-size: 20px;
 }
+
 #back:hover,
 #next:hover,
 #cancel:hover {

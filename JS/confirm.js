@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Display fetched data
     document.getElementById("mode-id").textContent = mode;
-    document.getElementById("washValue").textContent = wash;
-    document.getElementById("tempValue").textContent = temp;
-    document.getElementById("dryValue").textContent = dry;
+    document.getElementById("washValue").textContent = wash + " mins";
+    document.getElementById("tempValue").textContent = temp + " °C";
+    document.getElementById("dryValue").textContent = dry + " mins";
 
     // Buttons
     document.getElementById("back").addEventListener("click", function() {

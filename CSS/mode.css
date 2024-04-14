@@ -10,6 +10,11 @@ html {
   text-align: center;
 }
 
+#next:disabled, #next:disabled:hover{
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: none;
+}
+
 .content {
   margin-top: 7vh;
   height: 60%;
