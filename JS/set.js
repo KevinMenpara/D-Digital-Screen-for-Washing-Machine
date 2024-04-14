@@ -23,6 +23,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function updateValue(element, value) {
         element.textContent = value;
+
+        document.getElementById("washMinus").disabled = (washValue.textContent == 0) ? true : false;
+        document.getElementById("washPlus").disabled = (washValue.textContent == 45) ? true : false;
+        document.getElementById("tempMinus").disabled = (tempValue.textContent == 0) ? true : false;
+        document.getElementById("tempPlus").disabled = (tempValue.textContent == 45) ? true : false;
+        document.getElementById("dryMinus").disabled = (dryValue.textContent == 0) ? true : false;
+        document.getElementById("dryPlus").disabled = (dryValue.textContent == 45) ? true : false;
     }
 
     function changeValue(element, delta) {
@@ -34,27 +41,27 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     document.getElementById("washPlus").addEventListener("click", function() {
-        changeValue(washValue, 1);
+        changeValue(washValue, 5);
     });
 
     document.getElementById("washMinus").addEventListener("click", function() {
-        changeValue(washValue, -1);
+        changeValue(washValue, -5);
     });
 
     document.getElementById("tempPlus").addEventListener("click", function() {
-        changeValue(tempValue, 1);
+        changeValue(tempValue, 5);
     });
 
     document.getElementById("tempMinus").addEventListener("click", function() {
-        changeValue(tempValue, -1);
+        changeValue(tempValue, -5);
     });
 
     document.getElementById("dryPlus").addEventListener("click", function() {
-        changeValue(dryValue, 1);
+        changeValue(dryValue, 5);
     });
 
     document.getElementById("dryMinus").addEventListener("click", function() {
-        changeValue(dryValue, -1);
+        changeValue(dryValue, -5);
     });
 
     // Cancel button
