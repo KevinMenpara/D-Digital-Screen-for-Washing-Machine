@@ -1,11 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 body {
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(234, 255, 0),
-    rgb(216, 124, 44),
-    purple
-  );
+  background-color: #182b3a;
+  background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%);
   overflow: hidden;
   font-family: "Comic Neue", cursive;
 }

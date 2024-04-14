@@ -4,16 +4,6 @@ body {
   height: 100%;
   margin: 0;
 }
-body {
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(234, 255, 0),
-    rgb(216, 124, 44),
-    purple
-  );
-  overflow: hidden;
-  font-family: "Comic Neue", cursive;
-}
 
 .container {
   display: flex;
